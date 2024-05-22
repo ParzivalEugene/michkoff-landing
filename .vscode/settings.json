@@ -1,14 +1,9 @@
 {
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "discord.lowerDetailsEditing": "Michkoff | Portfolio",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "prettier": "explicit"
   },
-  "editor.wordWrap": "on"
+  "editor.tabSize": 2
 }
