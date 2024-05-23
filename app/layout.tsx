@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://michkoff.com",
     images: [
       {
-        url: "/open-graph-banner.png",
+        url: "https://michkoff.com/open-graph-banner.png",
         width: 1200,
         height: 630,
         alt: "Michkoff",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Michkoff | Portfolio",
     images: [
       {
-        url: "/open-graph-banner.png",
+        url: "https://michkoff.com/open-graph-banner.png",
         width: 1200,
         height: 630,
         alt: "Michkoff",
