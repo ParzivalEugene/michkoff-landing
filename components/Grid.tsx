@@ -50,7 +50,7 @@ const Grid = () => {
             <div className="transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 justify-end">
               <div className="font-sans font-extralight md:max-w-52 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10"></div>
               <div className="font-sans text-lg lg:text-3xl max-w-96 font-bold z-10">
-                I prioritize client collaboration, fostering open communication
+                На первом месте находится коммуникация с клиентом
               </div>
             </div>
           </div>

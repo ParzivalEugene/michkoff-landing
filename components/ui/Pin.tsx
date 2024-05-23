@@ -38,7 +38,10 @@ export const PinContainer = ({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
-      <Link href={href}
+      <Link
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           perspective: "1000px",
           transform: "rotateX(70deg) translateZ(0deg)",
@@ -55,7 +58,7 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </Link>
-      <PinPerspective title={title}/>
+      <PinPerspective title={title.replace("https://", "")} />
     </div>
   );
 };
@@ -67,7 +70,7 @@ export const PinPerspective = ({ title }: { title: string }) => {
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
         <div className="absolute top-0 inset-x-0  flex justify-center">
           <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
-            <span className="relative z-20 text-white text-xs font-bold inline-block py-0.5">
+            <span className="relative z-20 text-white text-xs font-bold inline-block py-0.5 whitespace-nowrap">
               {title}
             </span>
 

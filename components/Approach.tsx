@@ -1,5 +1,5 @@
-import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 
 import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
@@ -7,15 +7,17 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        Мой <span className="text-purple">подход</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          title="Планирование"
+          icon={<AceternityIcon order="Этап 1" />}
+          // des="We'll collaborate to map out your website's goals, target audience,
+          // and key functionalities. We'll discuss things like site structure,
+          // navigation, and content requirements."
+          des="Мы разработаем план разработки вашего продукта, определим дизайн и функционал.
+          Мы обсудим такие вещи, как структура сайта, навигация и требования к контенту."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -23,11 +25,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="Разработка"
+          icon={<AceternityIcon order="Этап 2" />}
+          des="На этом этапе я переведу все в функциональный код, создавая ваш сайт с нуля. Так же я буду регулярно делиться прогрессом и вносить ваши правки."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -40,11 +40,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          title="Запуск"
+          icon={<AceternityIcon order="Этап 3" />}
+          des="После того, как вы одобрите окончательный продукт, я разверну его на вашем хостинге и мы убедимся, что все работает как задумано."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -125,14 +123,14 @@ const Card = ({
 const AceternityIcon = ({ order }: { order: string }) => {
   return (
     <div>
-      <button className="relative inline-flex overflow-hidden rounded-full p-[1px] ">
+      <button className="relative inline-flex overflow-hidden rounded-full p-[1px] cursor-default">
         <span
           className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite]
          bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]"
         />
         <span
-          className="inline-flex h-full w-full cursor-pointer items-center 
-        justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
+          className="inline-flex h-full w-full items-center justify-center rounded-full
+          bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl font-bold text-2xl"
         >
           {order}
         </span>
