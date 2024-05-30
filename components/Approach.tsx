@@ -5,11 +5,11 @@ import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 
 const Approach = () => {
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" id="approach">
       <h1 className="heading">
         Мой <span className="text-purple">подход</span>
       </h1>
-      <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
+      <div className="md:my-20 mt-12 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         <Card
           title="Планирование"
           icon={<AceternityIcon order="Этап 1" />}
@@ -74,7 +74,7 @@ const Card = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] rounded-3xl "
+       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] h-64 rounded-3xl "
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:

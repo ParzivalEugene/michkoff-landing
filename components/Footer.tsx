@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="w-full pt-20 pb-10" id="contact">
       <BackgroundBeams className="left-0 bottom-0 h-[32rem]" />
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center gap-4 md:gap-0">
         <h1 className="heading lg:max-w-[45vw]">
           Готовы вывести <span className="text-purple">ваш</span> продукт на
           новый цифровой уровень?
@@ -35,8 +35,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+      <div className="flex mt-16 md:flex-row flex-col-reverse justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light my-4 md:my-0">
           © 2020-2024 Евгений Мичков
         </p>
 
