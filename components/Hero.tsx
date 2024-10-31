@@ -42,9 +42,7 @@ const Hero = () => {
           </p>
 
           <a href="#about">
-            <MagicButton
-              title="Мои работы"
-            />
+            <MagicButton title="Обо мне" />
           </a>
         </div>
       </div>

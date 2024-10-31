@@ -26,12 +26,8 @@ const Footer = () => {
               position="right"
             />
           </a>
-          <a href="/resume-michkov-evgeny.pdf" download>
-            <MagicButton
-              title="Резюме"
-              icon={<FaFile />}
-              position="right"
-            />
+          <a href="/Резюме_Мичков_Евгений_Владимирович.pdf" download>
+            <MagicButton title="Резюме" icon={<FaFile />} position="right" />
           </a>
         </div>
       </div>
